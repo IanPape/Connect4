@@ -1,19 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>Connect 4</title>
-  <link href="connect4.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <h1>GIPHY PARTAYY!!</h1> <br>
+  <form id="form">
+    <input id="searchBar" type="text" placeholder="search"> <br>
+    <button id="submitButton">submit</button>
+  </form>
+  <button id="removeButton">Remove GIFs</button> <!-- Button to remove GIFs -->
+  <div id="gifs"></div> <!-- Container for GIFs -->
 
-<input id="p1-color" placeholder="Player 1 color">
-<input id="p2-color" placeholder="Player 2 color">
-<button id="start-game">Start Game!</button>
-
-<div id="game">
-  <table id="board"></table>
-</div>
-
-<script src="connect4.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
